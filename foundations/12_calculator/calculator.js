@@ -27,8 +27,12 @@ const power = function(base, exponent) {
 	return(Math.pow(base, exponent));
 };
 
-const factorial = function() {
-	
+const factorial = function(number) {
+  let facto = 1;
+	for(let count = number ; count > 0 ; count--){
+    facto *= count;
+  }
+  return(facto);
 };
 
 // Do not edit below this line
